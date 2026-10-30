@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-779295952"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-779295952');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href]');
+        if (!a) return;
+        if (/(himama\.com|lillio\.com)\/online_registration/.test(a.href)) {
+          gtag('event', 'conversion', {'send_to': 'AW-779295952/RMmwCK6z0K4dENC5zPMC'});
+        }
+      }, true);
+    </script>
+
 
     <style data-vite-theme="" data-inject-first="">:root {
       --background: 213 97% 78%;
